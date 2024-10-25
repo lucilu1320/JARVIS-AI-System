@@ -11,12 +11,12 @@ This repository contains the code for **JARVIS**, an AI-powered virtual assistan
 ## Setup Instructions
 
 ### Prerequisites
-- **Python 3.7+**
+- **Python 3.10**
 - **Pip** for package management
 - A microphone connected to your system
-- `ffmpeg` installed (required for playing audio on different platforms)
 - **Anthropic API Key** for processing the user queries
 - **Eleven Labs API Key** and **Voice ID** for the text-to-speech functionality
+- **FFmpeg (Optional)**: FFmpeg can be used for more advanced audio playback and conversion needs, but it is not strictly required if platform-specific tools (`afplay`, `aplay`, `start`) are available.
 
 ### Installation
 1. **Clone the repository**:
@@ -52,7 +52,7 @@ JARVIS will calibrate the microphone, welcome you, and then listen for your comm
 - **SpeechRecognition**: Python library for speech recognition.
 - **Eleven Labs API**: To convert text responses into natural-sounding speech.
 - **Dotenv**: To manage environment variables securely.
-- **FFmpeg**: Required for audio playback on different platforms.
+- **FFmpeg (Optional)**: Required for advanced audio playback features, though not mandatory if using platform-specific players.
 
 ### Python Packages Used
 Install these dependencies using `pip`:
@@ -63,6 +63,7 @@ pip install anthropic speechrecognition python-dotenv requests
 ## Important Notes
 - Ensure that your `.env` file is correctly populated with valid API keys. Any errors related to missing API keys will be displayed upon startup.
 - This project currently uses `afplay` for Mac systems, `aplay` for Linux, and `start` for Windows for audio playback. Ensure you have the appropriate player installed and accessible from your terminal.
+- **FFmpeg** is optional for more advanced audio requirements.
 
 ## Project Structure
 - **assist.py**: Main script for running the JARVIS AI assistant.
@@ -70,9 +71,7 @@ pip install anthropic speechrecognition python-dotenv requests
 - **requirements.txt**: List of Python packages required to run the project.
 
 ## Example Commands
-- "What is the weather today?"
 - "Tell me a joke."
-- "Set a reminder for 5 PM."
 - "What is the capital of France?"
 - "Exit" to quit the assistant.
 

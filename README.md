@@ -21,13 +21,15 @@ This repository contains the code for **JARVIS**, an AI-powered virtual assistan
 ### Installation
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/jarvis-ai-system.git
+    git clone https://github.com/lucilu1320/JARVIS-AI-System
     cd jarvis-ai-system
     ```
 
 2. **Install Dependencies**:
     Install the required packages using pip:
     ```sh
+    pip3 install -r requirements.txt
+    or
     pip install -r requirements.txt
     ```
 

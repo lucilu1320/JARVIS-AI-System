@@ -1,0 +1,5 @@
+anthropic
+speechrecognition
+python-dotenv
+requests
+pydub
